@@ -1,0 +1,19 @@
+.navbar {
+  background-color: $color1;
+  min-height: 70px;
+
+  .navbar-nav {
+    .nav-link {
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      color: $color2;
+    }
+  }
+  img {
+    max-width: 80px;
+  }
+}

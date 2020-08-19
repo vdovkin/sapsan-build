@@ -14,9 +14,9 @@
 
     <!-- bootstrap css -->
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
 
@@ -39,10 +39,14 @@
     <![endif]-->
   </head>
   <body>
-    <main>
-      {% block content %}{% endblock %}
-    </main>
-
+    <div id="wrapper">
+      <header>
+        {% include '_navbar.html' %}
+      </header>
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+    </div>
     <!-- javascript js -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

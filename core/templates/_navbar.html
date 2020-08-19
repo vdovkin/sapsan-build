@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container">
+    <div class="navbar-brand mr-4">
+      <a href="{{url_for('main.home')}}">
+        <img
+          src="{{ url_for('static', filename='img/logo.png') }}"
+          alt="logo"
+        />
+      </a>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarToggle"
+      aria-controls="navbarToggle"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <!-- Navbar Right Side -->
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="{{url_for('main.home')}}">Головна</a>
+        <a class="nav-item nav-link" href="#">Елементи</a>
+        <a class="nav-item nav-link" href="#">Аналітика</a>
+        <a class="nav-item nav-link" href="#">Про сервіс</a>
+        <a class="nav-item nav-link" href="#">Сайт УЦСБ</a>
+      </div>
+    </div>
+  </div>
+</nav>
