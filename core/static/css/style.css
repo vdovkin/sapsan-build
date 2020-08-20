@@ -23,6 +23,10 @@ h6 {
   margin-bottom: 20px;
 }
 
+li {
+  list-style: none;
+}
+
 .btn-standart {
   background-color: #58a2dc;
   color: #fff;
@@ -54,7 +58,7 @@ h6 {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #9a9a9a;
+  color: #858585;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -75,6 +79,49 @@ h6 {
 .page-title {
   color: #fff;
   margin: 30px 10px;
+}
+
+.footer {
+  background-color: #e5cfb5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 40px 0;
+  line-height: 1;
+}
+
+.footer .footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer .footer-links a {
+  font-weight: bold;
+  color: #858585;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: none;
+  color: #b18446;
+}
+
+#sub-footer {
+  text-shadow: none;
+  padding: 0;
+  padding-top: 30px;
+  margin: 20px 0 0 0;
+}
+
+#sub-footer .copyright {
+  text-align: left;
+  font-size: 12px;
+}
+
+#sub-footer ul.social-network {
+  float: right;
+}
+
+#sub-footer ul.social-network li {
+  display: inline;
+  margin: 0 5px;
 }
 
 .main-desctiption {
