@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.6em;
-  color: #656565;
+  color: #333333;
 }
 
 a:active {
@@ -20,8 +20,20 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.1em;
-  color: #333;
   margin-bottom: 20px;
+}
+
+.btn-standart {
+  background-color: #58a2dc;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 15px 10px;
+}
+
+.btn-standart:hover {
+  background-color: #b18446;
+  color: #fff;
 }
 
 #wrapper {
@@ -30,22 +42,124 @@ h6 {
   padding: 0;
 }
 
+#inner-headline {
+  background-color: #c6a16e;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 .navbar {
-  background-color: #656565;
   min-height: 70px;
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #fff;
+  color: #9a9a9a;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
-  color: #333;
+  color: #b18446;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #c6a16e;
 }
 
 .navbar img {
   max-width: 80px;
+}
+
+.page-title {
+  color: #fff;
+  margin: 30px 10px;
+}
+
+.main-desctiption {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.main-desctiption a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-desctiption a:hover {
+  color: #b18446;
+  font-weight: bold;
+}
+
+/* apps filter section */
+.apps-filter {
+  padding: 0;
+}
+
+.apps-filter li {
+  display: inline-block;
+  margin: 0px 5px 5px 0px;
+}
+
+.apps-filter a {
+  color: #c6a16e;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 0;
+  border: 2px solid #c6a16e;
+}
+
+.apps-filter a:hover {
+  text-decoration: none;
+  color: #b18446;
+  border-color: #b18446;
+}
+
+.apps-filter .active a {
+  color: #fff;
+  background-color: #c6a16e;
+}
+
+/* apps picture section */
+.apps-pic {
+  position: relative;
+  display: block;
+}
+
+.apps-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.apps-pic .hover-wrap {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.apps-pic .hover-wrap:hover {
+  background-color: #c6a16e;
+  opacity: 0.5;
+  -webkit-transition: all 450ms ease-out 0s;
+  transition: all 450ms ease-out 0s;
+}
+
+.apps-pic .apps-links {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }

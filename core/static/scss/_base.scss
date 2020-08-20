@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.6em;
-  color: $color1;
+  color: $font_color;
 }
 
 a:active {
@@ -19,12 +19,31 @@ h6 {
   font-family: $font;
   font-weight: 700;
   line-height: 1.1em;
-  color: $color2;
   margin-bottom: 20px;
+}
+
+.btn-standart {
+  background-color: $color4;
+  color: #fff;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 15px 10px;
+}
+
+.btn-standart:hover {
+  background-color: $color2;
+  color: #fff;
 }
 
 #wrapper {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+#inner-headline {
+  background-color: $color1;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }

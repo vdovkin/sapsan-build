@@ -1,10 +1,9 @@
 .navbar {
-  background-color: $color1;
   min-height: 70px;
 
   .navbar-nav {
     .nav-link {
-      color: #fff;
+      color: $color3;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -12,8 +11,16 @@
     .nav-link:focus {
       color: $color2;
     }
+    .nav-link.active {
+      color: $color1;
+    }
   }
   img {
     max-width: 80px;
   }
+}
+
+.page-title {
+  color: #fff;
+  margin: 30px 10px;
 }

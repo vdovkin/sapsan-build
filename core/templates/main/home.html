@@ -1,5 +1,56 @@
 {% extends "layout.html" %} {% block content %}
 
-<h1>Home page</h1>
+<section id="inner-headline">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="page-title">Головна</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center my-auto">
+        <div class="main-desctiption">
+          <p>
+            На данній сторінці розміщено перелік прикладних програм для
+            автомаизації розразункків.
+            <a href="#">Детальніше про сервіс</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="apps-filter text-center">
+          <li class="all active"><a href="#">Всі</a></li>
+          <li class="web"><a href="#" title="">Сталеві конструкції</a></li>
+          <li class="icon"><a href="#" title="">Бетонні конструкції</a></li>
+          <li class="graphic"><a href="#" title="">Інше</a></li>
+        </ul>
+        <!-- <div class="clearfix"></div> -->
+
+        <div class="row">
+          {% for app in apps %}
+          <div class="col-lg-3 col-sm-6 p-2">
+            <div class="apps-pic" data-id="id-0" data-type="web">
+              <img
+                src="{{ url_for('static', filename=app.img) }}"
+                alt="{{app.link}} preview picture"
+              />
+
+              <a href="#" class="hover-wrap"
+                ><span class="apps-links">{{app.name}}</span></a
+              >
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock content %}
