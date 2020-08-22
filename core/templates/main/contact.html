@@ -10,25 +10,104 @@
   </div>
 </section>
 
-<section id="content">
+<section id="contacts">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 text-center my-auto">
-        <div class="main-desctiption">
-          <p>
-            На данній сторінці розміщено перелік прикладних програм для
-            автомаизації розразункків.
-            <a href="#">Детальніше про сервіс</a>
-          </p>
+      <div class="col-md-6">
+        <h4>Контакти</h4>
+        <div class="contacts-field">
+          <i class="far fa-envelope fa-lg"></i>
+          <a href="mailto:sapsanbuild@gmail.com">sapsanbuild@gmail.com</a>
         </div>
+        <ul class="social-network">
+          <li>
+            <a href="#" data-placement="top" title="Facebook"
+              ><i class="fa fa-facebook fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" data-placement="top" title="Twitter"
+              ><i class="fa fa-twitter fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" data-placement="top" title="Linkedin"
+              ><i class="fa fa-linkedin fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" data-placement="top" title="Pinterest"
+              ><i class="fa fa-pinterest fa-3x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" data-placement="top" title="Google plus"
+              ><i class="fa fa-google-plus fa-3x"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="social-contacts"></div>
       </div>
-      <div class="col-md-6 text-center my-auto">
-        <div class="main-desctiption">
-          <p>
-            На данній сторінці розміщено перелік прикладних програм для
-            автомаизації розразункків.
-            <a href="#">Детальніше про сервіс</a>
-          </p>
+      <div class="col-md-6">
+        <div class="contact-form">
+          <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+              <legend class="border-bottom mb-4">Зворотній зв'язок</legend>
+              <div class="form-group">
+                {{ form.name.label(class="form-control-label") }} {% if
+                form.name.errors %} {{ form.name(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                  {% for error in form.name.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %} {{ form.name(class="form-control form-control-lg") }}
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.email.label(class="form-control-label") }} {% if
+                form.email.errors %} {{ form.email(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                  {% for error in form.email.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %} {{ form.email(class="form-control form-control-lg")
+                }} {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.title.label(class="form-control-label") }} {% if
+                form.title.errors %} {{ form.title(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                  {% for error in form.title.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %} {{ form.title(class="form-control form-control-lg")
+                }} {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.content.label(class="form-control-label") }} {% if
+                form.content.errors %} {{ form.content(class="form-control
+                form-control-lg is-invalid") }}
+                <div class="invalid-feedback">
+                  {% for error in form.content.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %} {{ form.content(class="form-control form-control-lg")
+                }} {% endif %}
+              </div>
+            </fieldset>
+            <div class="form-group">
+              {{ form.submit(class="btn btn-standart") }}
+            </div>
+          </form>
         </div>
       </div>
     </div>

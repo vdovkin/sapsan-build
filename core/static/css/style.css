@@ -37,7 +37,7 @@ li {
 
 .btn-standart:hover {
   background-color: #b18446;
-  color: #fff;
+  color: #292929;
 }
 
 #wrapper {
@@ -228,6 +228,88 @@ li {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.about {
+  margin-top: 30px;
+}
+
+.serv-type {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.serv-type h5 {
+  font-size: 16px;
+  color: #858585;
+}
+
+.team-member {
+  position: relative;
+  display: block;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+}
+
+.team-member h5 {
+  color: #c6a16e;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.block-heading {
+  background-color: #c2c2c2;
+}
+
+.block-heading h4 {
+  color: #292929;
+  padding: 20px 0 20px 20px;
+  font-size: 20px;
+}
+
+.service-description {
+  margin-bottom: 30px;
+}
+
+#contacts {
+  margin-top: 40px;
+}
+
+#contacts .contacts-field {
+  margin-bottom: 30px;
+}
+
+#contacts .contacts-field a {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #58a2dc;
+  text-decoration: none;
+}
+
+#contacts .contacts-field a:hover {
+  color: #b18446;
+}
+
+#contacts ul.social-network {
+  padding: 0;
+}
+
+#contacts ul.social-network li {
+  display: inline;
+  margin: 0 15px 10px 0;
+}
+
+#contacts ul.social-network a {
+  color: #858585;
+}
+
+#contacts ul.social-network a:hover {
+  color: #b18446;
 }
 
 .error-content .back {

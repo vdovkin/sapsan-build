@@ -13,22 +13,184 @@
 <section id="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 text-center my-auto">
-        <div class="main-desctiption">
-          <p>
-            На данній сторінці розміщено перелік прикладних програм для
-            автомаизації розразункків.
-            <a href="#">Детальніше про сервіс</a>
-          </p>
+      <div class="col-12">
+        <div class="about">
+          <h5>
+            Головною ідеєю сервісу є створення програм, що допоможуть
+            інженерам-проектувальникам, архітекторам та іншим будівельникам у їх
+            професійній діяльносі.
+          </h5>
+          <p>Наразі сервіси поділено відповідно до типу несучих конструкці</p>
         </div>
       </div>
-      <div class="col-md-6 text-center my-auto">
-        <div class="main-desctiption">
-          <p>
-            На данній сторінці розміщено перелік прикладних програм для
-            автомаизації розразункків.
-            <a href="#">Детальніше про сервіс</a>
-          </p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="serv-type">
+            <h5>
+              Сталеві конструкці
+            </h5>
+            <img
+              src="{{ url_for('static', filename='img/types/steel.jpg') }}"
+              alt="steel"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="serv-type">
+            <h5>
+              Бетонні конструкці
+            </h5>
+            <img
+              src="{{ url_for('static', filename='img/types/concreate.jpg') }}"
+              alt="concreate"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="serv-type">
+            <h5>
+              Інше
+            </h5>
+            <img
+              src="{{ url_for('static', filename='img/types/other.jpg') }}"
+              alt="other"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-description">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="{{ url_for('static', filename='img/solidgrey.png') }}"
+            alt="servise1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-9">
+          <div class="serv-info">
+            <h5>Сервіс №1</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              necessitatibus labore architecto cupiditate reiciendis deserunt
+              laudantium veniam quis deleniti asperiores id doloremque
+              perspiciatis unde velit, nobis voluptatum fugiat consequuntur
+              iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-description">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="{{ url_for('static', filename='img/solidgrey.png') }}"
+            alt="servise1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-9">
+          <div class="serv-info">
+            <h5>Сервіс №1</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              necessitatibus labore architecto cupiditate reiciendis deserunt
+              laudantium veniam quis deleniti asperiores id doloremque
+              perspiciatis unde velit, nobis voluptatum fugiat consequuntur
+              iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-description">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="{{ url_for('static', filename='img/solidgrey.png') }}"
+            alt="servise1"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-9">
+          <div class="serv-info">
+            <h5>Сервіс №1</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              necessitatibus labore architecto cupiditate reiciendis deserunt
+              laudantium veniam quis deleniti asperiores id doloremque
+              perspiciatis unde velit, nobis voluptatum fugiat consequuntur
+              iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-12">
+        <div class="block-heading">
+          <h4>Наша команда</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our team starts -->
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <img
+            src="{{ url_for('static', filename='img/team/CEO.jpg') }}"
+            alt="ceo"
+          />
+          <!-- Name -->
+          <h5>Вдовкін Олександр</h5>
+          <span>Керівник проекту</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <img
+            src="{{ url_for('static', filename='img/team/structural_engineer.jpg') }}"
+            alt="structural_engineer"
+          />
+
+          <h5>Вдовкін Олександр</h5>
+          <span>Інженер-проектувальник</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <img
+            src="{{ url_for('static', filename='img/team/developer.jpg') }}"
+            alt="developer"
+          />
+          <!-- Name -->
+          <h5>Вдовкін Олександр</h5>
+          <span>Програміст</span>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="team-member">
+          <img
+            src="{{ url_for('static', filename='img/team/designer.jpg') }}"
+            alt="designer"
+          />
+          <h5>Вдовкін Олександр</h5>
+          <span>Дизайнер</span>
         </div>
       </div>
     </div>
