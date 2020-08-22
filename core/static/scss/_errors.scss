@@ -1,0 +1,20 @@
+.error-content {
+  .back {
+    margin-bottom: 20px;
+  }
+  h3 {
+    color: $color5;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: $color3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+  }
+  a:hover {
+    color: $color2;
+  }
+}

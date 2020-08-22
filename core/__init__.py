@@ -8,6 +8,9 @@ def create_app(config_class=Config):
 
     from core.main.routes import main
 
+    from core.errors.handlers import errors
+
     app.register_blueprint(main)
+    app.register_blueprint(errors)
 
     return app

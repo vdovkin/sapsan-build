@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block content %}
+
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center error-content">
+        <h3>Сторінка не знайдена (404)</h3>
+        <div class="back">
+          <a href="{{url_for('main.home')}}">На головну</a>
+        </div>
+
+        <img
+          src="{{ url_for('static', filename='img/404.jpg') }}"
+          alt="404error"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

@@ -229,3 +229,26 @@ li {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.error-content .back {
+  margin-bottom: 20px;
+}
+
+.error-content h3 {
+  color: #292929;
+}
+
+.error-content img {
+  width: 100%;
+}
+
+.error-content a {
+  color: #858585;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.error-content a:hover {
+  color: #b18446;
+}
