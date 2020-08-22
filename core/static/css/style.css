@@ -82,11 +82,22 @@ li {
 }
 
 .footer {
-  background-color: #e5cfb5;
+  margin-top: 30px;
+  background-color: #292929;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  padding: 40px 0;
   line-height: 1;
+}
+
+.footer .footer-links h5 {
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b18446;
+}
+
+.footer .footer-links ul {
+  padding: 0;
 }
 
 .footer .footer-links li {
@@ -105,14 +116,14 @@ li {
 
 #sub-footer {
   text-shadow: none;
-  padding: 0;
-  padding-top: 30px;
+  padding: 10px 0 0 0;
   margin: 20px 0 0 0;
 }
 
 #sub-footer .copyright {
   text-align: left;
   font-size: 12px;
+  color: #fff;
 }
 
 #sub-footer ul.social-network {
@@ -122,6 +133,14 @@ li {
 #sub-footer ul.social-network li {
   display: inline;
   margin: 0 5px;
+}
+
+#sub-footer ul.social-network a {
+  color: #b18446;
+}
+
+#sub-footer ul.social-network a:hover {
+  color: #fff;
 }
 
 .main-desctiption {

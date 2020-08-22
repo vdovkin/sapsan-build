@@ -21,15 +21,36 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarToggle">
       <!-- Navbar Right Side -->
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="{{url_for('main.home')}}"
-          >Головна</a
-        >
-        <a class="nav-item nav-link" href="#">Елементи</a>
-        <a class="nav-item nav-link" href="#">Аналітика</a>
-        <a class="nav-item nav-link" href="#">Про сервіс</a>
-        <a class="nav-item nav-link" href="#">Сайт УЦСБ</a>
-      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{url_for('main.home')}}">Головна</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarServisesDropdown"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Сервіси
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarServisesDropdown">
+            <a class="dropdown-item" href="#">Сервіс 1</a>
+            <a class="dropdown-item" href="#">Сервіс 2</a>
+            <a class="dropdown-item" href="#">Сервіс 3</a>
+            <a class="dropdown-item" href="#">Сервіс 4</a>
+            <a class="dropdown-item" href="#">Сервіс 5</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.about') }}">Про сервіс</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('main.contact') }}">Контакти</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
